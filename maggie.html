@@ -1,0 +1,756 @@
+<HTML>
+<HEAD>
+     <TITLE>Maggie Language Learning</TITLE>
+     <link rel='stlyesheet' type='text/css' href='style.css'>
+     <style type='text/css'>
+     body{
+    background:#fff;
+    margin:0;
+    }
+    .navbar{
+      position: absolute;
+      z-index: 2;
+    width:100%;
+    background:#000;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0rgba(0,0,0,0.12);
+    }
+ul{
+    text-align:left;
+    display:inline;
+    margin:0;
+    padding:0;
+    list-style:none; 
+    }
+ul li{
+    font:bold 12px/18px sans-serif;
+    display:inline-block;
+    position:relative;
+    padding:25px 20px;
+    background:#000;
+    }
+ul li a{
+    text-decoration:none;
+    padding:25px 20px;
+    color:white;
+    font-size:18px;
+    }
+ul li:hover{
+    background:#909497;
+    color:white;
+    }
+ul li ul{
+    padding:0;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:250px;
+    display:none;
+    visibility:hidden;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0rgba(0,0,0,0.12);
+    }
+ul li ul li {
+    background: #000;
+    display:block;
+    }
+ul li ul li:hover{
+    background: #909497;
+    }
+ul li:hover ul{
+    display:block;
+    opacity:1;
+    visibility: visible;
+    }
+ul ul ul li{
+    display:none;
+    }
+ul ul li:hover li{
+    display:block;
+    }
+ul ul ul{
+    left:100%;
+    top:0;
+    }body{
+    background:#fff;
+    margin:0;
+    }
+    .navbar{
+    width:100%;
+    background:#000;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0rgba(0,0,0,0.12);
+    }
+ul{
+    text-align:left;
+    display:inline;
+    margin:0;
+    padding:0;
+    list-style:none; 
+    }
+ul li{
+    font:bold 12px/18px sans-serif;
+    display:inline-block;
+    position:relative;
+    padding:25px 20px;
+    background:#000;
+    }
+ul li a{
+    text-decoration:none;
+    padding:25px 20px;
+    color:white;
+    font-size:18px;
+    }
+ul li:hover{
+    background:#909497;
+    color:white;
+    }
+ul li ul{
+    padding:0;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:250px;
+    display:none;
+    visibility:hidden;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0rgba(0,0,0,0.12);
+    }
+ul li ul li {
+    background: #000;
+    display:block;
+    }
+ul li ul li:hover{
+    background: #909497;
+    }
+ul li:hover ul{
+    display:block;
+    opacity:1;
+    visibility: visible;
+    }
+ul ul ul li{
+    display:none;
+    }
+ul ul li:hover li{
+    display:block;
+    }
+ul ul ul{
+    left:100%;
+    top:0;
+    }
+    *{
+    margin:0;
+    padding:0;
+    }
+body{
+    font-family:"Arial Rounded MT Bold", sans-serif;
+    background:#ffffff;
+    }
+.container{
+    position: fixed;
+    padding: 600px 900px;
+    }
+.wrapper{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50px, -50px);
+    }
+.input{
+    width: 400px;
+    border: 3px solid #000;
+    background: transparent;
+    padding:15px 30px;
+    border-radius: 50px;
+    color:#000;
+    font-size: 18px;
+    outline: none;
+    }
+::-webkit-input-placeholder{
+     color:#000;
+     text-transform: uppercase;
+     font-family: "Arial Rounded MT Bold", sans-serif;
+    }
+::-moz-input-placeholder{
+     color:#000;
+     text-transform: uppercase;
+     font-family: "Arial Rounded MT Bold", sans-serif;
+    }
+::-ms-input-placeholder{
+     color:#000;
+     text-transform: uppercase;
+     font-family: "Arial Rounded MT Bold", sans-serif;
+    }
+.close-btn{
+    position: absolute;
+    top:600px;
+    right:900px;
+    cursor:pointer;
+    width:120px;
+    height:55px;
+    background: #000;
+    color:#fff;
+    border:0;
+    border-radius: 50px;
+    outline:none;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+     #maggie{
+         position: absolute;
+         left:-0.1;
+         top:-4.0;
+         width:75px;
+         z-index: 3;
+     }
+     #flag{
+         position: absolute;
+         left:-0.1;
+         top:68;
+         width:720px;
+     }
+     #maggie2{
+         position: relative;
+         left:-8.0;
+         top:547;
+         width:728px;
+     }
+     #box1{
+        width:190px;
+          height:150px;
+          background:none;
+          position:absolute;
+          top:547;
+          left:530;
+          z-index:1;
+     }
+     #box1:hover{
+        width:190px;
+          height:150px;
+          background-color:#fff;
+          position:absolute;
+          top:547;
+          left:530;
+     }
+     #box2{
+        width:120px;
+          height:150px;
+          background:none;
+          position:absolute;
+          top:800;
+          left:600;
+          z-index:1;
+     }
+     #box2:hover{
+        width:120px;
+          height:150px;
+          background-color:#fff;
+          position:absolute;
+          top:800;
+          left:600;
+     }
+     #box3{
+        width:50px;
+          height:50px;
+          background:none;
+          position:absolute;
+          top:975;
+          left:595;
+          z-index:1;
+     }
+     #box3:hover{
+        width:50px;
+          height:50px;
+          background-color:#fff;
+          position:absolute;
+          top:975;
+          left:595;
+     }
+     #box4{
+        width:150px;
+          height:100px;
+          background:none;
+          position:absolute;
+          top:547;
+          left:345;
+          z-index:1;
+     }
+     #box4:hover{
+        width:150px;
+          height:100px;
+          background-color:#fff;
+          position:absolute;
+          top:547;
+          left:345;
+     }
+     #box5{
+        width:190px;
+          height:50px;
+          background:none;
+          position:absolute;
+          top:990;
+          left:400;
+          z-index:1;
+     }
+     #box5:hover{
+        width:190px;
+          height:50px;
+          background-color:#fff;
+          position:absolute;
+          top:990;
+          left:400;
+     }
+     #box6{
+        width:150px;
+          height:60px;
+          background:none;
+          position:absolute;
+          top:547;
+          left:190;
+          z-index:1;
+     }
+     #box6:hover{
+        width:150px;
+          height:60px;
+          background-color:#fff;
+          position:absolute;
+          top:547;
+          left:190;
+     }
+     #box7{
+        width:90px;
+          height:60px;
+          background:none;
+          position:absolute;
+          top:547;
+          left:60;
+          z-index:1;
+     }
+     #box7:hover{
+        width:90px;
+          height:60px;
+          background-color:#fff;
+          position:absolute;
+          top:547;
+          left:60;
+     }
+     #box8{
+        width:100px;
+          height:120px;
+          background:none;
+          position:absolute;
+          top:610;
+          left:1;
+          z-index:1;
+     }
+     #box8:hover{
+        width:100px;
+          height:120px;
+          background-color:#fff;
+          position:absolute;
+          top:610;
+          left:1;
+     }
+     #box9{
+        width:190px;
+          height:78px;
+          background:none;
+          position:absolute;
+          top:750;
+          left:340;
+          transform: rotate(40deg);
+          z-index:1;
+     }
+     #box9:hover{
+        width:190px;
+          height:78px;
+          background-color:#fff;
+          position:absolute;
+          top:750;
+          left:340;
+          transform: rotate(40deg);
+     }
+     #box10{
+        width:50px;
+          height:50px;
+          background:none;
+          position:absolute;
+          top:880;
+          left:525;
+          z-index:1;
+     }
+     #box10:hover{
+        width:50px;
+          height:50px;
+          background-color:#fff;
+          position:absolute;
+          top:880;
+          left:525;
+     }
+     #box11{
+        width:100px;
+          height:100px;
+          background:none;
+          position:absolute;
+          top:935;
+          left:1;
+          z-index:1;
+     }
+     #box11:hover{
+        width:100px;
+          height:100px;
+          background-color:#fff;
+          position:absolute;
+          top:935;
+          left:1;
+     }
+     #box12{
+        width:100px;
+          height:150px;
+          background:none;
+          position:absolute;
+          top:830;
+          left:310;
+          z-index:1;
+     }
+     #box12:hover{
+        width:100px;
+          height:150px;
+          background-color:#fff;
+          position:absolute;
+          top:830;
+          left:310;
+     }
+     #box13{
+        width:130px;
+          height:150px;
+          background:none;
+          position:absolute;
+          top:830;
+          left:85;
+          transform: rotate(340deg);
+          z-index:1;
+     }
+     #box13:hover{
+        width:130px;
+          height:150px;
+          background-color:#fff;
+          position:absolute;
+          top:830;
+          left:85;
+          transform: rotate(340deg);
+     }
+     #box14{
+        width:150px;
+          height:100px;
+          background:none;
+          position:absolute;
+          top:700;
+          left:100;
+          transform: rotate(340deg);
+          z-index:1;
+     }
+     #box14:hover{
+        width:150px;
+          height:100px;
+          background-color:#fff;
+          position:absolute;
+          top:700;
+          left:100;
+          transform: rotate(340deg);
+     }
+     #box15{
+        width:100px;
+          height:150px;
+          background:none;
+          position:absolute;
+          top:800;
+          left:200;
+          z-index:1;
+     }
+     #box15:hover{
+        width:100px;
+          height:150px;
+          background-color:#fff;
+          position:absolute;
+          top:800;
+          left:200;
+     }
+     #bigtext{
+        font-size: 20px;
+        color:#00FFE0;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 40%;
+        left: 57%;
+     }
+     #big{
+        font-size: 20px;
+        color:#7F57E4;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 50%;
+        left: 85%;
+        transform: rotate(290deg);
+     }
+     #text{
+        font-size: 15px;
+        color:#6061E6;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 50%;
+        left: 63%;
+        transform: rotate(315deg);
+     }
+     #b{
+        font-size:15px;
+        color:black;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 53%;
+        left: 60%;
+     }
+     #i{
+        font-size:15px;
+        color:#9A7D0A;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 30%;
+        left: 60%;
+     }
+     #g{
+        font-size:15px;
+        color:#FF0000;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 32%;
+        left: 80%;
+     }
+     #c{
+        font-size:15px;
+        color:#BA4A00;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 55%;
+        left: 70%;
+     }
+     #v{
+        font-size:25px;
+        color:#FFA07A;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 35%;
+        left: 85%;
+     }
+     #q{
+        font-size:25px;
+        color:#AAB7B8;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 25%;
+        left: 65%;
+        transform: rotate(230deg);
+     }
+     #r{
+        font-size:15px;
+        color:#F40D81;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 45%;
+        left: 80%;
+        transform: rotate(70deg);
+     }
+    #u{
+        font-size:20px;
+        color:#229954;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 20%;
+        left: 75%;
+     }
+     #t{
+        font-size:15px;
+        color:#FFFFFF;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 25%;
+        left: 85%;
+     }
+     #p{
+        font-size:20px;
+        color:#212F3C;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 20%;
+        left: 55%;
+     }
+     #h{
+        font-size:30px;
+        color:#78281F;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 15%;
+        left: 90%;
+     }
+     #n{
+        font-size:25px;
+        color:#78281F;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 45%;
+        left: 53%;
+        transform: rotate(270deg);
+     }
+     #x{
+        font-size:20px;
+        color:#FCF404;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 25%;
+        left: 90%;
+        transform: rotate(deg);
+     }
+     #z{
+        font-size:23px;
+        color:#2ECC71;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 60%;
+        left: 90%;
+        transform: rotate(deg);
+     }
+     #w{
+        font-size:25px;
+        color:#E67E22;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 55%;
+        left: 80%;
+        transform: rotate(deg);
+     }
+     #e{
+        font-size:30px;
+        color:#E74C3C;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: rotate(deg);
+     }
+     #y{
+        font-size:27px;
+        color:#00ECFF;
+        font-family: Arial Rounded MT Bold;
+        position: absolute;
+        top: 60%;
+        left: 53%;
+        transform: rotate(deg);
+     }
+     #maggie3{
+         position: absolute;
+         left:67%;
+         top:30%;
+         height:20%;
+     }
+     #search{
+         position: fixed;
+         left:90%;
+         top:30%;
+         height:20%;
+     }
+     #table{
+        position: relative;
+        top:545;
+        left:-0.5;
+    }
+    #table2{
+        position: relative;
+        top:380;
+        left:720;
+    }
+    #TT{
+        font-size: 29px;
+    }
+    #TT2{
+        font-size: 29px;
+    }
+</style>
+</head>
+<body  bgcolor='white'>
+    <CENTER><div  class="navbar">
+     <ul>
+        <li><a  href="#bottom"> <a href='https://www.duolingo.com/'>Language </a></a>
+             <ul>
+                <li><a  href="#">Chinese</a></li>
+                <li><a  href="#">Dutch</a></li>
+                <li><a  href="#">French</a></li>
+                <li><a  href="#">German</a></li>
+                <li><a  href="#">Greek</a></li>
+                <li><a  href="#">Indonesian</a></li>
+                <li><a  href="#">Italian</a></li>
+                <li><a  href="#">Japanese</a></li>
+                <li><a  href="#">Korean</a></li>
+                <li><a  href="#">Polish</a></li>
+                <li><a  href="#">Portuguses</a></li>
+                <li><a  href="#">Russian</a></li>
+                <li><a  href="#">Swedish</a></li>
+                <li><a  href="#">Turkish</a></li>
+                <li><a  href="#">Spanish</a></li>
+             </ul>
+            </li>
+        <li><a  href="#Bottom"> About </a></li>
+     </ul>
+</div></CENTER>
+     <FONT  id='bigtext'>Hello</FONT>
+     <FONT  id='big'>здороваться</FONT>
+     <FONT  id='text'>こんにちは</FONT>
+     <FONT  id='b'>你好</FONT>
+     <FONT  id='i'>Ciao</FONT>
+     <FONT  id='g'>Hola</FONT>
+     <FONT  id='c'>안녕하세요!</FONT>
+     <FONT  id='v'>χερετισμός</FONT>
+     <FONT  id='q'>Bonjour</FONT>
+     <FONT  id='r'>Guten Tag</FONT>
+     <FONT  id='u'>ฮัลโหล</FONT>
+     <FONT  id='t'>早安</FONT>
+     <FONT  id='p'>Dia duit</FONT>
+     <FONT  id='h'>Sawa</FONT>
+     <FONT  id='n'>Hallo</FONT>
+     <FONT  id='x'>Hey</FONT>
+     <FONT  id='z'>Salut</FONT>
+     <FONT  id='w'>aloha</FONT>
+     <FONT  id='e'>Olá</FONT>
+     <FONT  id='y'>kaixo</FONT>
+     <IMG   id='maggie2' src='Maggie.png'></IMG>
+     <a href='https://www.google.com.tw/search?q=chinese&oq=chinese&aqs=chrome..69i57j69i61l3j0l2.1348j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box1'><Center><DIV  id='text1'>Chinese</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?ei=yzTkW8-vM5uvoAT6yKPgBQ&q=dutch&oq=dutch&gs_l=psy-ab.3..0i67k1l7j0l3.97843.98830.0.99269.5.4.0.1.1.0.94.309.4.4.0....0...1c.1.64.psy-ab..0.5.314....0.2L8G9PRr7BA&safe=active&ssui=on'><DIV  id='box2'><Center><DIV  id='text2'>Dutch</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=french&oq=french&aqs=chrome..69i57j0l5.1393j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box3'><Center><DIV  id='text3'>French</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=german&oq=german&aqs=chrome..69i57j0l5.2873j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box4'><Center><DIV  id='text4'>German</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=greek&oq=greek&aqs=chrome..69i57j69i61l3j0l2.1368j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box5'><Center><DIV  id='text5'>Greek</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?ei=8zXkW53TE5Du-Qa74qTgBg&q=indonesian+language&oq=indonesian&gs_l=psy-ab.1.1.0i67k1l6j0i7i30k1l3j0i67k1.11236.12479.0.13424.2.2.0.0.0.0.90.166.2.2.0....0...1c.1.64.psy-ab..0.2.166....0.bLrgxVBbDHM&safe=active&ssui=on'><DIV  id='box6'><Center><DIV  id='text6'>Indonesian</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=italian&oq=italian&aqs=chrome..69i57j0l5.7029j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box7'><Center><DIV  id='text7'>Italian</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=japanese&oq=japanese&aqs=chrome..69i57j69i61l2j0l3.6311j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box8'><Center><DIV  id='text8'>Japanese</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=korean&oq=korean&aqs=chrome..69i57j0l5.1744j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box9'><Center><DIV  id='text9'>Korean</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=polish&oq=polish&aqs=chrome..69i57j0l5.1565j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box10'><Center><DIV  id='text10'>Polish</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=portuguese&oq=portuge&aqs=chrome.1.69i57j0l5.3631j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box11'><Center><DIV  id='text11'>Portuguses</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=russian&oq=russian&aqs=chrome..69i57j0l5.4665j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box12'><Center><DIV  id='text12'>Russian</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=swedish&oq=swedish&aqs=chrome..69i57j0l5.1868j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box13'><Center><DIV  id='text13'>Swedish</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?ei=qjbkW72PE8zqwQPjx6WADw&q=turkish&oq=turkish&gs_l=psy-ab.3..0i67k1l4j0l6.1039.2722.0.3067.9.9.0.0.0.0.83.645.9.9.0....0...1c.1.64.psy-ab..0.9.643....0.d_OLKJP_b04&safe=active&ssui=on'><DIV  id='box14'><Center><DIV  id='text14'>Turkish</DIV></Center></DIV></a>
+     <a href='https://www.google.com.tw/search?q=spanish&oq=spanish&aqs=chrome..69i57j69i61j0l4.1332j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on'><DIV  id='box15'><Center><DIV  id='text15'>Spanish</DIV></Center></DIV></a>
+     <IMG   id='maggie3' src='Maggie Logo.png'></IMG>
+     <IMG   id='flag'  src='Maggie Flag.jpg'></IMG>
+     <a href='file:///Users/carina/Desktop/maggie.html#'><IMG   id='maggie' src='Maggie Logo.png'></IMG></a>
+     <div class="wrapper">
+     <div class="container">
+     <form method="get" action="http://www.google.com/search"><input type="text" name="q" size="25" maxlength="255" value="" class="input" placeholder="Search..."/>
+     <input type="button" value="Search" class="close-btn"></form>
+     </div>
+ 	 </div>
+     <TABLE  id='table' width='720' border='5' height='165'>
+         <TR>
+            <TH  align='left' valign='top'><CENTER><p><FONT  id='TT2' color='black' face='Arial Rounded MT Bold'>About the Ｗebsite</FONT></p></CENTER><BR><FONT  size='4' color='black' face='Arial Rounded MT Bold'>This website is for people to learn different language and play some game to improve some language skills.</FONT><BR><BR></TH>
+         </TR></TABLE>
+     <TABLE  id='table2' width='720' border='5' height='165'>
+         <TR>
+            <TH  align='left' valign='top'><CENTER><p><FONT  id='TT' color='black' face='Arial Rounded MT Bold'>Why People Need to Learn Different Languages?</FONT></p></CENTER><BR><FONT  size='4' color='black' face='Arial Rounded MT Bold'>It is important for people to new language because it helps people to communicate with foreign people and country.</FONT><BR><BR></TH>
+         </TR></TABLE>
+         <a name="Bottom"></a>
+         <a name='bottom'></a>
+</BODY>
+</HTML>
